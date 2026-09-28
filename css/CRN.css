@@ -45,7 +45,7 @@
                 /* color: rgba(206, 49, 0); */
                 font-size: 14px; 
                 /* gap:12px; */
-                margin-left: 43px;
+                margin-left: 2%;
                 margin-top: 10px;
                 
                 
@@ -55,12 +55,14 @@
                 color:rgba(206, 49, 0);
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
-            
+            .or{
+                padding: 6px;
+            }
             .or:hover{
                background-color: rgba(206, 49, 0); 
                color: white;
                border-radius: 12%;
-               padding:9px;
+               /* padding:px; */
                transition: all 0.3s ease-in-out;
             }
 
