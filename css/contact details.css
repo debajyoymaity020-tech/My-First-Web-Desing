@@ -533,18 +533,18 @@
             .bc{
                width: 78%;
                 margin-left: 11.17%;
-                border: 0.8px solid black;  
+                /* border: 0.8px solid black;   */
                 height: 330px; 
             }
             .bcmain{
                 height: 58%;
                 width: 100%;
-                border: 1px solid red;
+                /* border: 1px solid red; */
             }
             .htd{
                 height: 42%;
                 width: 100%;
-                border: 1px solid red;
+                /* border: 1px solid red; */
             }
             .bc1{
                 font-size: 24px;
@@ -618,14 +618,17 @@
                 border-radius: 10px;
             }
             .rr{
-                height: 7%;
-                width: 53%;
-                border: 1px solid red;
+                height: 8%;
+                width: auto;
+                /* border: 1px solid red; */
                 margin-left: 25.3%;
             }
             .rr1{
                 margin-left: 0.3%;
                font-size: 34px;   
+               color: red;
+               text-shadow: 0 0 2px black,
+               0 0 28px black;
             }
            .mi{
             height: auto;
@@ -634,15 +637,18 @@
             margin-top: 1.5%;
             margin-bottom: 2.3%;
             margin-left: 36%;
+            box-shadow: 0 0 10px red,
+            0 0 10px red;
            }
            .mi2{
             font-size: 33px;
-            margin-left: 20%;
+            margin-left: 12%;
+            color: red;
            }
            .mi-pad{
             margin-left: 18%;
             width: 64%;
-            border: 0.1px solid black;
+            /* border: 0.1px solid black; */
             margin-bottom: 2.3%;
            }
            .mi-list{
