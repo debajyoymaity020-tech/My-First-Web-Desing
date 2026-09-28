@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 15% 20%, #043d26 0%, transparent 30%),
+        radial-gradient(circle at 90% 10%, #075a31 0%, transparent 35%),
+        linear-gradient(135deg, #021711, #00100c 60%, #031c14);
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow: hidden;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 7%;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo b,
+.card-logo b {
+    color: #14e878;
+}
+
+.logo-icon {
+    font-size: 55px;
+    color: #14e878;
+}
+
+
+/* ================= TOP MENU ================= */
+
+.top-menu {
+    position: absolute;
+    right: 7%;
+    top: 50px;
+
+    display: flex;
+    gap: 18px;
+
+    color: #d5d5d5;
+    font-size: 15px;
+}
+
+
+/* ================= LEFT SECTION ================= */
+
+.left-section {
+    position: absolute;
+
+    left: 8%;
+    top: 25%;
+
+    width: 45%;
+}
+
+.welcome {
+    color: #11eb83;
+
+    font-size: 17px;
+    letter-spacing: 5px;
+
+    margin-bottom: 22px;
+}
+
+.left-section h1 {
+    font-size: 62px;
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.left-section h1 span {
+    display: block;
+    color: #14e878;
+}
+
+.subtitle {
+    color: #bdbdbd;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+
+/* ================= HEADPHONE ================= */
+
+.headphone {
+    position: absolute;
+
+    left: 20px;
+    top: 320px;
+
+    font-size: 230px;
+
+    filter:
+        drop-shadow(0 0 10px #00ff88)
+        drop-shadow(0 0 35px #00a85a);
+
+    transform: rotate(-8deg);
+}
+
+
+/* ================= MUSIC NOTES ================= */
+
+.music-note {
+    position: absolute;
+
+    color: #15f18a;
+
+    font-size: 55px;
+
+    text-shadow:
+        0 0 10px #14e878,
+        0 0 25px #14e878;
+}
+
+.note1 {
+    left: 30%;
+    top: 58%;
+}
+
+.note2 {
+    left: 39%;
+    top: 67%;
+
+    font-size: 45px;
+}
+
+.note3 {
+    left: 5%;
+    bottom: 15%;
+
+    font-size: 60px;
+}
+
+.note4 {
+    right: 36%;
+    top: 42%;
+
+    font-size: 40px;
+}
+
+
+/* ================= WAVES ================= */
+
+.wave {
+    position: absolute;
+
+    width: 520px;
+    height: 120px;
+
+    border: 2px solid #0ee977;
+
+    border-color: #0ee977 transparent transparent transparent;
+
+    border-radius: 50%;
+}
+
+.wave1 {
+    left: -100px;
+    top: 360px;
+
+    transform: rotate(18deg);
+}
+
+.wave2 {
+    left: -70px;
+    top: 375px;
+
+    transform: rotate(18deg);
+}
+
+.wave3 {
+    left: -40px;
+    top: 390px;
+
+    transform: rotate(18deg);
+}
+
+
+/* ================= LOGIN CARD ================= */
+
+.login-card {
+    position: absolute;
+
+    right: 8%;
+    top: 15%;
+
+    width: 520px;
+
+    padding: 45px 48px;
+
+    border: 1px solid #13ed82;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 77, 53, 0.55),
+            rgba(1, 22, 17, 0.8)
+        );
+
+    backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 0 20px rgba(0, 255, 130, 0.10),
+        inset 0 0 30px rgba(0, 255, 130, 0.04);
+}
+
+
+/* ================= CARD LOGO ================= */
+
+.card-logo {
+    text-align: center;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.card-logo span {
+    color: #12ea7d;
+    font-size: 55px;
+}
+
+.login-subtitle {
+    text-align: center;
+
+    color: #bdbdbd;
+
+    font-size: 17px;
+
+    margin-bottom: 35px;
+}
+
+
+/* ================= INPUT ================= */
+
+.input-box {
+    height: 66px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 0 20px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #185d60;
+
+    border-radius: 15px;
+
+    background: rgba(0, 20, 25, 0.7);
+
+    transition: 0.3s;
+}
+
+.input-box:hover {
+    border-color: #14e878;
+
+    box-shadow: 0 0 12px rgba(20, 232, 120, 0.15);
+}
+
+.input-box > span {
+    font-size: 22px;
+    color: #d7d7d7;
+}
+
+.input-box input {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 17px;
+}
+
+.input-box input::placeholder {
+    color: #a6a6a6;
+}
+
+.eye {
+    cursor: pointer;
+}
+
+
+/* ================= OPTIONS ================= */
+
+.options {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 18px 0 25px;
+
+    color: #ccc;
+
+    font-size: 14px;
+}
+
+.options label {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.options input {
+    accent-color: #14e878;
+}
+
+.options a {
+    color: #13ef82;
+
+    text-decoration: none;
+}
+
+
+/* ================= LOGIN BUTTON ================= */
+
+.login-btn {
+    width: 100%;
+    height: 62px;
+
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+
+    background: linear-gradient(
+        90deg,
+        #19e984,
+        #41ef9b
+    );
+    text-decoration: none;
+    margin-left: 36%;
+
+    color: #00160d;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-btn span {
+    font-size: 27px;
+    margin-left: 8px;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 20px rgba(20, 232, 120, 0.35);
+}
+
+
+/* ================= OR ================= */
+
+.or {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 28px 0;
+}
+
+.or span {
+    flex: 1;
+
+    height: 1px;
+
+    background: #46625b;
+}
+
+.or p {
+    color: #aebdb7;
+}
+
+
+/* ================= SOCIAL ================= */
+
+.social {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.social button {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    border: 1px solid #2e5d62;
+
+    background: rgba(0, 15, 20, 0.6);
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.social button:hover {
+    border-color: #14e878;
+
+    box-shadow: 0 0 15px rgba(20, 232, 120, 0.25);
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= SIGNUP ================= */
+
+.signup {
+    text-align: center;
+
+    margin-top: 28px;
+
+    color: #9fa9a5;
+
+    font-size: 14px;
+}
+
+.signup a {
+    color: #14e878;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .left-section {
+        display: none;
+    }
+
+    .login-card {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .top-menu {
+        display: none;
+    }
+
+    .logo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .login-card {
+        width: 90%;
+        padding: 30px 25px;
+    }
+
+    .card-logo {
+        font-size: 28px;
+    }
+}
